@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+    width: 100%;
+    height: 100%;
+}
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav{
+width: 100%;
+height: 75px;
+background-color:rgb(0, 0, 0);
+display: flex;
+
+}
+label.logo{
+font-size: 25px;
+color: aliceblue;
+margin: 0 100px;
+line-height: 60px;
+}
+nav ul{
+float: right;
+list-style-type: none;
+}
+nav ul li{
+display: inline;
+line-height: 60px;
+}
+nav ul li a{
+text-decoration: none;
+color: aliceblue;
+font-size: 14px;
+text-transform: capitalize;
+padding: 12px;
+
+border-radius: 10px;
+}
+nav ul li a.active,a:hover{
+background:lightgreen ;
+-webkit-text-fill-color: brown;
+border-color: blueviolet;
+}
+#checkbtn{
+float: right;
+line-height: 60px;
+margin-right: 10px;
+font-size: 40px;
+color:blanchedalmond;
+}
+#check{
+display: none;
+}
+#check:checked ~ ul{
+left:0;
+}
+@media(max-width:695px){
+label.logo{
+font-size: 30px;
+}
+#checkbtn{
+display: block;
+}
+
+nav ul{
+width: 100%;
+height: 200%;
+background-color:black;
+position: absolute;
+top:80px;
+left: -100%;
+transition: 0.5s;
+
+}
+nav ul li{
+display: block;
+text-align: center;
+
+} 
+}
+@media(max-width:450px){
+label.logo{
+font-size: 30px;
+margin :0 50px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+}
+input[type=checkbox]{
+height: 40px;
+width:40px;
+}
+       
+    .container{
+            display: grid;
+            padding-top: 100px;
+            grid-template-columns: 1fr ,1fr;
+        grid-gap:2rem;
+        
+        grid-template-columns: repeat(2,auto);
+        box-shadow: 2px 1px black ;
+        
+        }
+        .item{
+            background-color: rgb(230, 244, 158);
+            border: 2px solid black;
+            padding: 70px;
+            box-shadow: 2px 1px black ; 
+        }
+       
+        button .item{
+            cursor: pointer;
+           background-image: url(file:///C:/Users/HP/Desktop/45.jpg);
+         background-size:  cover;
+        
+          
+        }
+button{
+    background-color: rgb(197, 235, 193);
+ 
+    -webkit-text-fill-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 5px;
+box-shadow: 2px 2px 2px 4px black ;
+}.jk{
+   text-align: center;
+   text-decoration: underline;
+}
+.kl{
+   text-align: center;
+   text-decoration: underline;
+   font-size: 40px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check"name="" value="" >
+        <label for="check" id="checkbtn">
+<i class="fa fa-bars"></i>            
+        </label>
+<label class="logo" >
+    shopping.com
+</label>
+
+<ul>
+    <li><a class="active" href="projectkr.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="#">services</a></li>
+    <li><a href="team.html">team</a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="loginform.html"><i class="fa fa-user-circle"></i></a></li>
+</ul>
+</nav>
+    <h1 class="kl">TEAM FOR WEBSITE MAKING</h1>
+<div class="container">
+    <button>  <div class="item"><a>
+         </a> 
+         <h1 class="jk">DEVELOPER NUMBER-1</h1> 
+         <h3>NAME = KRISH AGARWAL</h3>
+         <h3>BRANCH = VOCATIONAL INFORMATION TECHNOLOGY</h3>
+         <h3>ROLL-NUMBER = 2205727</h3>
+         <h3>SUBJECT = WEB DEVELOPMENT PROJECT</h3>
+        </div></button>
+        <button>  <div class="item"><a>
+        </a>
+        <h1 class="jk">DEVELOPER NUMBER-2</h1>   
+        <h3>NAME = DHRUV KUMAR</h3>
+        <h3>BRANCH = VOCATIONAL INFORMATION TECHNOLOGY</h3>
+        <h3>ROLL-NUMBER = 2205716</h3>
+        <h3>SUBJECT = WEB DEVELOPMENT PROJECT</h3>
+
+       </div></button>
+
+
+</body>
+</html>
